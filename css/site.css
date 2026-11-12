@@ -156,27 +156,10 @@ button { font: inherit; color: inherit; }
 }
 
 .brand img {
-  width: 42px;
-  height: 52px;
+  height: 2.6rem;
+  width: auto;
+  max-width: 11.25rem;
   object-fit: contain;
-}
-
-.brand-name {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-  color: var(--olive);
-}
-
-.brand-ar {
-  font-size: 1.45rem;
-  font-weight: 700;
-}
-
-.brand-en {
-  font-size: 0.98rem;
-  font-weight: 600;
-  margin-top: 0.15rem;
 }
 
 .nav {
@@ -640,6 +623,11 @@ html[dir="rtl"] .contact-card:nth-child(3) { box-shadow: inset -3px 0 0 var(--co
   justify-content: space-between;
 }
 
+.foot .brand img {
+  height: 3.4rem;
+  max-width: 15rem;
+}
+
 .foot p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.95rem; }
 
 .foot nav {
@@ -902,9 +890,7 @@ html[lang="en"] .path .k {
 @media (min-width: 1101px) {
   .nav-toggle { display: none; }
   .wrap { width: min(1120px, calc(100% - 3rem)); }
-  .brand img { width: 48px; height: 60px; }
-  .brand-ar { font-size: 1.7rem; }
-  .brand-en { font-size: 1.08rem; }
+  .brand img { height: 3.15rem; max-width: 13.75rem; }
   .hero-grid { grid-template-columns: 1.15fr 0.85fr; gap: 3rem; }
   .about-grid { grid-template-columns: 1.05fr 0.95fr; gap: 3.5rem; align-items: end; }
   .launch-grid { grid-template-columns: 0.9fr 1.1fr; gap: 2rem; align-items: center; }
@@ -918,8 +904,7 @@ html[lang="en"] .path .k {
 
 @media (max-width: 420px) {
   .clock { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .brand-en { font-size: 0.88rem; }
-  .brand-ar { font-size: 1.28rem; }
+  .brand img { height: 2.35rem; max-width: 9.75rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

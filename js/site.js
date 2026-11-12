@@ -5,8 +5,8 @@
   var notes = document.querySelectorAll("[data-phase]");
   var openAt = Date.parse("2026-12-15T00:00:00+03:00");
   var waText = {
-    ar: "مرحبًا، أرغب في معرفة المزيد عن ثمائر.",
-    en: "Hello, I would like to know more about thamaer."
+    ar: "مرحبًا، أرغب في معرفة المزيد عن ثمريكس.",
+    en: "Hello, I would like to know more about thamarix."
   };
 
   function digits(n, lang) {
@@ -77,7 +77,7 @@
     var next = lang === "en" ? "en" : "ar";
     root.lang = next;
     root.dir = next === "en" ? "ltr" : "rtl";
-    try { localStorage.setItem("thamaer-lang", next); } catch (e) {}
+    try { localStorage.setItem("thamarix-lang", next); } catch (e) {}
     document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
       btn.setAttribute("aria-pressed", btn.getAttribute("data-set-lang") === next ? "true" : "false");
     });
